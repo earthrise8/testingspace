@@ -1,1 +1,72 @@
 
+h1{
+    color:#ffffff;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+h2{
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+p{
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Space Mono", monospace;
+}
+
+nav{
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    margin: 0;
+    justify-self: center;
+    
+}
+
+.main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body{
+    background-color:black;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
