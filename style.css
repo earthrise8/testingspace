@@ -1,7 +1,7 @@
 
 h1{
     color:#ffffff;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
     font-family: "Space Mono", monospace;
@@ -15,6 +15,14 @@ h2{
     font-family: "Space Mono", monospace;
 }
 
+h3{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Space Mono", monospace;
+}
+
 p{
     color: #ccc;
     font-size: 16px;
@@ -23,28 +31,131 @@ p{
 }
 
 nav{
-    text-align: center;
     font-family: "Space Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    background-color: black;
 }
 
 ul{
     list-style-type: none;
     display: flex;
     padding: 5px;
-    margin: 0;
-    justify-self: center;
+    margin: 0; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logoR{
+    color: red;
+}
+
+li{
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    nav {
+       flex-direction: column; 
+    }
     
+    ul {
+        flex-direction: column;
+    }
+    
+    li {
+        margin: 5px 0;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+
+.hero{
+    display: block;
+    height: 100vh;
+    position:top;
+}
+
+.herocontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    transform: translateY(-120%)
+}
+
+.carousel{
+    display:flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    max-height: 100vh;
+    align-items: auto;
+    justify-self: auto;
+    position: top;
+}
+
+.carousel img{
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    object-fit: cover;
+    max-width: 100%;
+    filter: opacity(70%);
 }
 
 .main{
     max-width: 800px;
     margin: 0 auto;
+    padding: 10px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 1px solid #ffffff;
+}
+
+.grid-item{
+    justify-content: center;
     padding: 20px;
 }
 
-body{
-    background-color:black;
-}
+
+
+
+
+
 
 .space-mono-regular {
   font-family: "Space Mono", monospace;
