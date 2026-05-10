@@ -8,13 +8,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
+    <script src="navbar.js"></script>
 </head>
 
 <body>
     <header>
         <nav>
-            <h1 href="#" class="logo">LUNAR</h1>
-            <ul>
+            <h1 href="#" class="logo">LUNAR</h1> |
+                <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
+            <ul id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">ARC</a></li>
                 <li><a href="#">Launches</a></li>
@@ -44,6 +46,30 @@
     </section>
 
     <section class="main">
+        <h2>Quick Links</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <a href="#">Home</a> 
+                <a href="#">ARC</a> 
+                <a href="#">Launches</a> 
+                <a href="#">Records</a> 
+                <a href="#">FAQ</a> 
+                <a href="#">Gallery</a> 
+                
+            </div>
+            <div class="grid-item">
+                <a href="#">High Power Certification</a> 
+                <a href="#">Board Members</a> 
+                <a href="#">Teams</a> 
+                <a href="#">Lost and Found</a> 
+                <a href="#">Contact Us</a>
+                <a href="#">Membership</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main">
         <h2>Next Launch</h2>
         <p>On Saturday, January 3th, 2026, from 9:00 am to 4:00 pm we will hold a high-power sport launch at Snow Ranch. Check back here and check the hot line in case the launch has to be changed or canceled.</p>
     </section>
@@ -66,21 +92,10 @@
         <p>9. Find your rocket, bring it back and fly it again. </p>
     </section>
 
-    <section class="main">
-        <h2>This is the Third Header</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h1>Grid Item 1</h1>
-                <p>This is the first grid item.</p>
-            </div>
-            <div class="grid-item">
-                <h1>Grid Item 2</h1>
-                <p>This is the second grid item.</p>
-            </div>
-        </div>
-        </section>
+    
 
 </body>
 
 
 </html>
+
