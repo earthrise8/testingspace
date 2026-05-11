@@ -39,10 +39,11 @@ nav{
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0; 
+    width: 100%;
     z-index: 1000;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .menu-toggle{
@@ -53,7 +54,17 @@ header{
     padding: 8px 16px;
 }
 
+.space{
+    display:none;
+}
+
+body:has(.active){
+        overflow: hidden;
+    }
+
 @media (max-width: 600px) {
+
+
     .menu-toggle{
         display: block;
         align-items: right;
@@ -72,28 +83,35 @@ header{
     button.menu-toggle{
         display: flex;
         margin-left: 85%;
+        border-radius: 20px;
     }
 
     nav {
         flex-direction: column; 
         align-items: flex-start;
+        fill-opacity: 0.5;
+        max-width: 100%;
+        max-height: 100%;
     }
     
     ul {
         flex-direction: column;
+        max-width: 100%
     }
     
     li {
         margin: 5px 0;
-        padding-bottom: 5px;
+        padding-bottom: 20px;
+        max-width: 100%;
     }
 
-    a {
+    nav a {
         color: #fff;
         text-decoration: none;
         vertical-align: middle;
         display: flex;
         align-items: center;
+        font-size: 30px;
     }
 
     nav h1{
@@ -102,11 +120,25 @@ header{
 
     header{
         display: flex;
+        max-width: 100%;
+        background: none;
+    }
+
+    header:has(.active){
+        background: black;
     }
 
     p{
         padding-right: 20px;
         padding-left: 20px
+    }
+    .carousel{
+        height:100vh
+    }
+   
+    .space{
+        display:flex;
+        padding-bottom: 100vh;
     }
 }
 
@@ -128,9 +160,6 @@ li{
     margin: 0 10px;
 }
 
-@media (max-width: 600px) {
-   
-}
 
 a {
     color: #fff;
