@@ -71,6 +71,7 @@ body:has(.active){
     .menu-toggle{
         display: block;
         align-items: right;
+        scale: 1.6;
     }
    
     nav ul{
@@ -85,7 +86,7 @@ body:has(.active){
 
     button.menu-toggle{
         display: flex;
-        margin-left: 85%;
+        margin-left: 80%;
         border-radius: 20px;
     }
 
@@ -94,7 +95,7 @@ body:has(.active){
         align-items: flex-start;
         fill-opacity: 0.5;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 120%;
     }
     
     ul {
