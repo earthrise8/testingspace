@@ -243,6 +243,7 @@ body{
 .grid-item a{
     color: #1000f3;
     text-decoration: none;
+    padding-bottom: 10px;
 }
 
 .grid-container2{
